@@ -1,0 +1,298 @@
+*{
+    font-family: "poppins",sans-serif;
+    box-sizing: border-box;
+}
+    body{
+    color: white;
+    font-weight: 20px;
+    background-color: black;
+}
+.first-page{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(8, 3, 3, 0.7),rgb(13, 12, 12)),url(header-image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo{
+     width: 230px;
+    height: 70px;
+    padding-left: 40px;
+    padding-top: 20px;
+}
+.btn{
+    border-radius: 5px;
+    width: 150px;
+    height: 45px;
+    background: transparent;
+    color: white;
+    border: 0.5px solid #fff;
+}
+.btn1{
+    border-radius: 5px;
+    width: 100px;
+    height: 45px;
+    background-color: rgb(248, 6, 6);
+    color: white;
+}
+.butns{
+    width: 50%;
+    float:right;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 10px;
+    margin: 20px;
+    gap: 20px;
+    padding-right: 100px;
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    padding: 0px;
+    font-weight: 500;
+}
+.body h1 {
+    padding: 10px;
+    margin: 0px;
+}
+.body h4 {
+    padding: 10px;
+    margin: 0px;
+}
+.body p {
+    padding: 10px;
+    margin: 0px;
+}
+.body input{
+    height: 70px;
+    width: 400px;
+    color: #fff;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 70%;
+}
+.body button{
+    height: 80px;
+    width: 250px;
+    color: white;
+    border-radius: 7px;
+    background-color: red;
+}
+.thokka{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+.row{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    border-top: 4px solid rgb(67, 65, 65);
+}
+.row-cont{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 250;
+    margin: 50px auto;
+    padding: 40px;
+}
+.row-cont p{
+    padding: 18px;
+    font-size: 30px;
+    text-align: left;
+}
+.row-img img{
+    padding-top: 10px;
+    height: 50  0px;
+    width: 650px;
+}
+.faq{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    border-top: 4px solid rgb(67, 65, 65);
+}
+.accordion{
+    margin: 3px auto;
+    width: 100%;
+    max-width: 750px;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.accordion li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordion .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s,padding 0.5s;
+}
+.accordion input[type="radio"]:checked +label +.content{
+    max-height: 600px;
+    padding: 30px 20px;
+}
+.accordion input[type="radio"]:checked +label::after{
+    transform: rotate(90deg);
+
+}
+small{
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin: 30px;
+}
+.button input{
+    width: 30vw;
+    height: 10vh;
+    border-radius: 7px;
+    background: transparent;
+    color: #fff;
+}
+.button button{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 7px;
+    background-color: red;    
+    color: #fff;
+}
+.call{
+    margin: 30px auto;
+    font-size: 20px;
+    padding-left: 250px;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.row-1{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    color: #fff;
+}
+.row-1 a{
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+}
+.div{
+    padding-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 200px;
+}
+@media only screen and (max-width:600px){
+    .header img{
+        height: 60px;
+        width: 150px;
+        padding-right: 10px;
+    }
+    .butns{
+        padding-left: 100px;
+    }
+    .body{
+        font-size: 18px;
+    }
+    .thokka button{
+        width: 100px;
+        font-size: 10px;
+    }
+    .thokka{
+        padding-bottom: 20px;
+    }.row{
+        flex-direction: column;
+        height: 100vh;
+        width: 100vw;
+    }
+    .row-cont h1{
+        font-size: 20px;
+    }
+    .row-cont P{
+        font-size: 15px;
+    }
+    .row-img img{
+        height: 300px;
+        width: 350px;
+        padding-top: 70px;
+        padding-left: 10px;
+    }
+    .row:nth-child(2),.row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .row-1{
+        font-size: 8px;
+
+    } 
+    .btn{
+        width: 100px;
+    } 
+    .btn1{
+        width: 100px;
+        font-size: 10px;
+    }
+    .call{
+        font-size: 15px;
+        text-align: left;
+    }
+    .button button{
+        font-size: 8px;    
+    }
+    .accordion{
+        width: 100vw;
+    }
+}
